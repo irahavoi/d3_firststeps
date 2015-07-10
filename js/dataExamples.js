@@ -4,27 +4,21 @@
 window.onload = function(){
     console.log('Let\'s load some data...');
     d3.csv("data/cities.csv", function(data){
+        d3.select("body").selectAll("div.cities")
+            .data(data)//dom elements are automatically binded to the corresponding data item. yay!
+            .enter()// enter fires every time when the next data item does not have a corresponding dom element:
+            //when there are fewer data items than dom elements, use exit()
+            .append("div")
+            .attr("class", "cities")
+            .html(function(dataItem, i){
+                return dataItem.label + ", " + dataItem.population;
+            });
         console.log(data)
     });
     d3.json("data/tweets.json", function(data){
         console.log(data);
     });
 
-    console.log('D3 Sorting capabilities:');
-    var nums = [5, 88, 3, 25, 26, 99, 1, 0, 200];
 
-    var min = d3.min(nums, function (el) {
-        return el;
-    });
-    var max = d3.max(nums, function (el) {
-        return el;
-    });
-    var mean = d3.mean(nums, function (el) {
-        return el;
-    });
-
-    console.log('Min: ' + min);
-    console.log('Max: ' + max);
-    console.log('Mean: ' + mean);
 
 }
