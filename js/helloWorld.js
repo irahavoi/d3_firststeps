@@ -53,3 +53,9 @@ d3.selectAll(".eye")
     .attr("cy", "130")
     .duration(300)
     .delay(3400);
+
+d3.select("#newID")
+    .transition()
+    .style("background", "red")
+    .duration(1000)
+    .delay(3400);

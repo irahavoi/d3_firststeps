@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb514f02-d944-4550-b979-39fcfbfa79a9" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/helloWorld.js" afterPath="$PROJECT_DIR$/js/helloWorld.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="d3_firststeps.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -29,10 +29,9 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="870">
-              <caret line="15" column="171" selection-start-line="15" selection-start-column="171" selection-end-line="15" selection-end-column="171" />
+            <state vertical-scroll-proportion="0.15632184" vertical-offset="0" max-vertical-offset="870">
+              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#svg#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#path#0;n#svg#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -43,8 +42,8 @@
       <file leaf-file-name="helloWorld.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/helloWorld.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="986">
-              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="1088">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
               <folding>
                 <element signature="e#0#43#0" expanded="false" />
               </folding>
@@ -380,12 +379,12 @@
       <changelist id="cb514f02-d944-4550-b979-39fcfbfa79a9" name="Default" comment="" />
       <created>1436492050987</created>
       <updated>1436492050987</updated>
-      <workItem from="1436492051803" duration="5934000" />
+      <workItem from="1436492051803" duration="6385000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5934000" />
+    <option name="totallyTimeSpent" value="6385000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -465,8 +464,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/js/helloWorld.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="986">
-          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="141" max-vertical-offset="1088">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
           </folding>
@@ -475,10 +474,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.29310346" vertical-offset="0" max-vertical-offset="870">
-          <caret line="15" column="171" selection-start-line="15" selection-start-column="171" selection-end-line="15" selection-end-column="171" />
+        <state vertical-scroll-proportion="0.15632184" vertical-offset="0" max-vertical-offset="870">
+          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#svg#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#path#0;n#svg#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
