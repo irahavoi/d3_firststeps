@@ -59,3 +59,10 @@ d3.select("#newID")
     .style("background", "red")
     .duration(1000)
     .delay(3400);
+
+
+d3.selectAll(".head")
+    .transition()
+    .attr("class", "tentative body")
+    .duration(500)
+    .delay(2000);
