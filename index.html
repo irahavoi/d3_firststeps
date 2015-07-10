@@ -6,9 +6,27 @@
     <script src="js/d3.js"></script>
 </head>
 <body>
-    <div>I'm just a div, which background is highlighted using d3.js</div>
-    <div>Me as well</div>
-    <div>And me</div>
+    <div id="someDiv" style="width:200px;height:100px;border:black 1px solid;">
+        Using d3, you can manipulate the dom.
+        <input id="someCheckbox" type="checkbox" />
+    </div>
+    <div id="infovizDiv">
+        <svg style="width:500px;height:500px;border:1px lightgray solid;">
+            <circle r="30" cx="250" cy="140" class="body"></circle>
+            <circle r="40" cx="250" cy="190" class="body"></circle>
+            <circle r="50" cx="250" cy="250" class="body"></circle>
+            <circle r="5" cx="235" cy="130" class="eye"></circle>
+            <circle r="5" cx="265" cy="130" class="eye"></circle>
+            <circle r="15" cx="250" cy="150" class="mouth"></circle>
+            <circle r="5" cx="250" cy="190" class="button"></circle>
+            <circle r="5" cx="250" cy="205" class="button"></circle>
+            <circle r="5" cx="250" cy="220" class="button"></circle>
+            <circle r="5" cx="250" cy="235" class="button"></circle>
+
+
+        </svg>
+    </div>
+
 </body>
 <script src="js/helloWorld.js"></script>
 </html>
