@@ -63,6 +63,6 @@ d3.select("#newID")
 
 d3.selectAll(".head")
     .transition()
-    .attr("class", "tentative body")
+    .attr("class", "tentative body head")
     .duration(500)
     .delay(2000);
