@@ -2,6 +2,10 @@
  * Created by irahavoi on 7/10/2015.
  */
 function createSoccerViz() {
+    d3.text("modal.html", function(data) {
+        d3.select("body").append("div").attr("id", "modal").html(data);
+    });
+
     d3.csv("data/worldcup.csv", function(data) {
         overallTeamViz(data);
 
@@ -33,7 +37,23 @@ function createSoccerViz() {
             .style("text-anchor", "middle")
             .attr("y", 30)
             .style("font-size", "10px")
-            .text(function(d) {return d.team;});
+            .text(function(d) {return d.team;})
+
+        teamG.on("mouseover", highlightRegion);
+        function highlightRegion(d){
+            d3.selectAll("g.overallG").select("circle")
+                .style("fill", function(p){
+                    return p.region == d.region ? "red" : "gray";
+                });
+        }
+
+        teamG.on("click", teamClick);
+        function teamClick(d) {
+            d3.selectAll("td.data").data(d3.values(d))
+                .html(function(p) {
+                    return p
+                });
+        };
 
 
         var dataKeys = d3.keys(incomingData[0]).filter(function(el) {
@@ -53,6 +73,8 @@ function createSoccerViz() {
             var radiusScale = d3.scale.linear()
                 .domain([ 0, maxValue ]).range([ 2, 20 ]);
             d3.selectAll("g.overallG").select("circle")
+                .transition()
+                .duration(1000)
                 .attr("r", function(d) {
                     return radiusScale(d[datapoint]);
                 });

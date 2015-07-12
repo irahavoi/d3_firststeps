@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/d3.js"></script>
+</head>
+<body>
+    <svg></svg>
+</body>
+<script>
+    var data = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+
+    d3.select("svg")
+            .selectAll("circle")
+            .data(data)
+            .enter()
+            .append("rect")
+            .attr("width", 10)
+            .style("fill", "rgb(63, 175, 244)")
+            .attr("x", function(d){return (d * 10) + 5*d })
+            .attr("y", function(d){return 150})
+            .attr("height", 0)
+            .on("mouseover",function(){
+                console.log("test");
+
+                d3.select(this).style("fill", "orange");
+            })
+            .on("mouseout",function(){
+                console.log("test");
+                d3.select(this).style("fill", "rgb(63, 175, 244)");
+            });
+
+
+    d3.selectAll("rect")
+            .transition()
+            .duration(2000)
+            .attr("height", function(d){return d * 10;})
+            .attr("y", function(d){return 150 - d*10});
+
+
+</script>
+</html>
